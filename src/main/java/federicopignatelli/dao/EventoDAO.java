@@ -14,7 +14,7 @@ public class EventoDAO {
         transaction.begin();
         em.persist(evento);
         transaction.commit();
-        System.out.println("Studente " + evento.getNomeEvento() + " aggiunto correttamente!");
+        System.out.println("Evento " + evento.getNomeEvento() + " aggiunto correttamente!");
     }
 
 
