@@ -1,6 +1,6 @@
-package dao;
+package federicopignatelli.dao;
 
-import entities.Evento;
+import federicopignatelli.entities.Evento;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 public class EventoDAO {

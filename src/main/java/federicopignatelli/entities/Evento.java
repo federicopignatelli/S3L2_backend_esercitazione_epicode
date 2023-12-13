@@ -1,4 +1,4 @@
-package entities;
+package federicopignatelli.entities;
 import javax.persistence.*;
 import java.time.LocalDate;
 
@@ -32,8 +32,7 @@ public class Evento {
     public Evento() {
     }
 
-    public Evento(long id, String nomeEvento, LocalDate dataEvento, String descrizioneEvento, entities.EventoTipo eventoTipo, long nMassimoPartecipanti) {
-        this.id = id;
+    public Evento(String nomeEvento, LocalDate dataEvento, String descrizioneEvento, federicopignatelli.entities.EventoTipo eventoTipo, long nMassimoPartecipanti) {
         this.nomeEvento = nomeEvento;
         this.dataEvento = dataEvento;
         this.descrizioneEvento = descrizioneEvento;
@@ -75,11 +74,11 @@ public class Evento {
         this.descrizioneEvento = descrizioneEvento;
     }
 
-    public entities.EventoTipo getEventoTipo() {
+    public federicopignatelli.entities.EventoTipo getEventoTipo() {
         return EventoTipo;
     }
 
-    public void setEventoTipo(entities.EventoTipo eventoTipo) {
+    public void setEventoTipo(federicopignatelli.entities.EventoTipo eventoTipo) {
         EventoTipo = eventoTipo;
     }
 

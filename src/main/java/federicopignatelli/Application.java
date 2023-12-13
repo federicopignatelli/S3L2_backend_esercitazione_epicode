@@ -1,8 +1,8 @@
 package federicopignatelli;
 
-import entities.Evento;
-import entities.EventoTipo;
-import dao.EventoDAO;
+import federicopignatelli.entities.Evento;
+import federicopignatelli.entities.EventoTipo;
+import federicopignatelli.dao.EventoDAO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -18,7 +18,7 @@ public class Application {
 
         EntityManager em = emf.createEntityManager();
         EventoDAO sd = new EventoDAO(em);
-        Evento Cerimonia = new Evento(1, "Cerimonia", LocalDate.of(2020, 1,1), "un bel matrimonio", EventoTipo.CAPODANNO, 100);
+        Evento Cerimonia = new Evento("Cerimonia", LocalDate.of(2020, 1,1), "un bel matrimonio", EventoTipo.CAPODANNO, 100);
 
         sd.save(Cerimonia);
 
