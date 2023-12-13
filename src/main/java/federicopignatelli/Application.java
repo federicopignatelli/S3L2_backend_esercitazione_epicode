@@ -19,8 +19,8 @@ public class Application {
         EntityManager em = emf.createEntityManager();
         EventoDAO sd = new EventoDAO(em);
         Evento Cerimonia = new Evento("Cerimonia", LocalDate.of(2020, 1,1), "un bel matrimonio", EventoTipo.CAPODANNO, 100);
-
-        sd.save(Cerimonia);
+        Evento Capodanno = new Evento("Capodanno", LocalDate.of(2023, 3,12), "un bel capodanno", EventoTipo.CAPODANNO, 150);
+        sd.save(Capodanno);
 
        em.close();
        emf.close();
